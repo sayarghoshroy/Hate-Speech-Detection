@@ -1,0 +1,506 @@
+# German Results for Task 2
+## Using a Multiclass MLP Classifier
+
+> Undefinded Metric Issues Encountered Everytime
+
+### tanh Activation
+#### adam Solver
+1.  Learn Rate = constant : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+
+
+2.  Learn Rate = invscaling : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+
+
+3.  Learn Rate = adaptive : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+#### sgd Solver
+
+
+
+4.  Learn Rate = constant : 
+Accuracy = 78.52631578947368%
+
+
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.85      0.92      0.88       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.58      0.81      0.67        78
+
+    accuracy                           0.79       475
+   macro avg       0.36      0.43      0.39       475
+weighted avg       0.70      0.79      0.74       475
+
+
+5.  Learn Rate = invscaling : 
+Accuracy = 76.63157894736841%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.85      0.92      0.88       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.50      0.71      0.58        78
+
+    accuracy                           0.77       475
+   macro avg       0.34      0.41      0.37       475
+weighted avg       0.68      0.77      0.72       475
+
+
+
+
+6.  Learn Rate = adaptive : 
+Accuracy = 76.0%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.82      0.92      0.86       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.54      0.67      0.60        78
+
+    accuracy                           0.76       475
+   macro avg       0.34      0.40      0.37       475
+weighted avg       0.67      0.76      0.71       475
+
+
+### relu Activation
+#### adam Solver
+
+
+
+7.  Learn Rate = constant : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+
+
+8.  Learn Rate = invscaling : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+
+
+9.  Learn Rate = adaptive : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+#### lbfgs Solver
+
+
+
+10.  Learn Rate = constant : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+
+
+11.  Learn Rate = invscaling : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+
+
+12.  Learn Rate = adaptive : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+#### sgd Solver
+
+
+
+13.  Learn Rate = constant : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+
+
+14.  Learn Rate = invscaling : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+
+
+15.  Learn Rate = adaptive : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+### identity Activation
+#### adam Solver
+
+
+
+16.  Learn Rate = constant : 
+Accuracy = 68.0%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.70      0.96      0.81       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.08      0.01      0.02        78
+
+    accuracy                           0.68       475
+   macro avg       0.20      0.24      0.21       475
+weighted avg       0.51      0.68      0.58       475
+
+
+
+
+17.  Learn Rate = invscaling : 
+Accuracy = 68.0%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.70      0.96      0.81       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.08      0.01      0.02        78
+
+    accuracy                           0.68       475
+   macro avg       0.20      0.24      0.21       475
+weighted avg       0.51      0.68      0.58       475
+
+
+
+
+18.  Learn Rate = adaptive : 
+Accuracy = 68.0%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.70      0.96      0.81       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.08      0.01      0.02        78
+
+    accuracy                           0.68       475
+   macro avg       0.20      0.24      0.21       475
+weighted avg       0.51      0.68      0.58       475
+
+
+#### lbfgs Solver
+
+
+
+19.  Learn Rate = constant : 
+Accuracy = 78.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.85      0.93      0.89       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.59      0.79      0.68        78
+
+    accuracy                           0.79       475
+   macro avg       0.36      0.43      0.39       475
+weighted avg       0.70      0.79      0.74       475
+
+
+
+
+20.  Learn Rate = invscaling : 
+Accuracy = 78.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.85      0.93      0.89       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.59      0.79      0.68        78
+
+    accuracy                           0.79       475
+   macro avg       0.36      0.43      0.39       475
+weighted avg       0.70      0.79      0.74       475
+
+
+
+
+21.  Learn Rate = adaptive : 
+Accuracy = 78.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.85      0.93      0.89       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.59      0.79      0.68        78
+
+    accuracy                           0.79       475
+   macro avg       0.36      0.43      0.39       475
+weighted avg       0.70      0.79      0.74       475
+
+
+### logistic Activation
+#### adam Solver
+
+
+
+22.  Learn Rate = constant : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+
+
+23.  Learn Rate = invscaling : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+
+
+24.  Learn Rate = adaptive : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+#### lbfgs Solver
+
+
+
+25.  Learn Rate = constant : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+
+
+26.  Learn Rate = invscaling : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+
+
+27.  Learn Rate = adaptive : 
+Accuracy = 70.94736842105263%
+
+
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+#### sgd Solver
+28.  Learn Rate = constant : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+
+
+29.  Learn Rate = invscaling : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+
+
+30.  Learn Rate = adaptive : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+

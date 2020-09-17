@@ -1,0 +1,82 @@
+#Results for English
+
+## identity Activation
+### lbfgs solver
+1. Learn Rate = constant : Accuracy = 90.02695417789758%
+
+2. Learn Rate = invscaling : Accuracy = 90.02695417789758%
+
+3. Learn Rate = adaptive : Accuracy = 90.02695417789758%
+
+### sgd Solver
+4. Learn Rate = constant : Accuracy = 89.75741239892183%
+
+5. Learn Rate = invscaling : Accuracy = 88.27493261455525%
+
+6. Learn Rate = adaptive : Accuracy = 89.35309973045821%
+
+### adam Solver
+7. Learn Rate = constant : Accuracy = 82.61455525606469%
+
+8. Learn Rate = invscaling : Accuracy = 82.61455525606469%
+
+9. Learn Rate = adaptive : Accuracy = 82.61455525606469%
+
+## logistic Activation
+### lbfgs Solver
+1. Learn Rate = constant : Accuracy = 47.03504043126684%
+
+2. Learn Rate = invscaling : Accuracy = 47.03504043126684%
+
+3. Learn Rate = adaptive : Accuracy = 47.03504043126684%
+
+### sgd Solver
+4. Learn Rate = constant : Accuracy = 47.03504043126684%
+
+5. Learn Rate = invscaling : Accuracy = 52.96495956873315%
+
+6. Learn Rate = adaptive : Accuracy = 47.03504043126684%
+
+### adam Solver
+7. Learn Rate = constant : Accuracy = 47.03504043126684%
+
+8. Learn Rate = invscaling : Accuracy = 47.03504043126684%
+
+9. Learn Rate = adaptive : Accuracy = 47.03504043126684%
+
+## relu Activation
+### sgd Solver
+1. Learn Rate = constant : Accuracy = 89.35309973045821%
+
+2. Learn Rate = invscaling : Accuracy = 84.50134770889488%
+
+3. Learn Rate = adaptive : Accuracy = 89.08355795148249%
+
+### adam Solver
+4. Learn Rate = constant : Accuracy = 47.03504043126684%
+
+5. Learn Rate = invscaling : Accuracy = 47.03504043126684%
+
+6. Learn Rate = adaptive : Accuracy = 47.03504043126684%
+
+### lbfgs solver
+7. Learn Rate = constant : Accuracy = 88.94878706199461%
+
+8. Learn Rate = invscaling : Accuracy = 88.94878706199461%
+
+9. Learn Rate = adaptive : Accuracy = 88.94878706199461%
+
+## tanh Activation
+### sgd Solver
+1. Learn Rate = constant : Accuracy = 89.8921832884097%
+
+2. Learn Rate = invscaling : Accuracy = 89.4878706199461%
+
+3. Learn Rate = adaptive : Accuracy = 87.87061994609164%
+
+### adam Solver
+4. Learn Rate = constant : Accuracy = 47.03504043126684%
+
+5. Learn Rate = invscaling : Accuracy = 47.03504043126684%
+
+6. Learn Rate = adaptive : Accuracy = 47.03504043126684%

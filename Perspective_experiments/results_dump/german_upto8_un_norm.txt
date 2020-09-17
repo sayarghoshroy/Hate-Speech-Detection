@@ -1,0 +1,489 @@
+### identity Activation
+#### adam Solver
+1.  Learn Rate = constant : 
+Accuracy = 74.73684210526315%
+
+              precision    recall  f1-score   support
+
+        NONE       0.33      0.04      0.06        28
+        PRFN       0.81      0.91      0.86       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.52      0.59      0.55        78
+
+    accuracy                           0.75       475
+   macro avg       0.42      0.38      0.37       475
+weighted avg       0.68      0.75      0.71       475
+
+
+2.  Learn Rate = invscaling : 
+Accuracy = 74.73684210526315%
+
+              precision    recall  f1-score   support
+
+        NONE       0.33      0.04      0.06        28
+        PRFN       0.81      0.91      0.86       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.52      0.59      0.55        78
+
+    accuracy                           0.75       475
+   macro avg       0.42      0.38      0.37       475
+weighted avg       0.68      0.75      0.71       475
+
+
+3.  Learn Rate = adaptive : 
+Accuracy = 74.73684210526315%
+
+              precision    recall  f1-score   support
+
+        NONE       0.33      0.04      0.06        28
+        PRFN       0.81      0.91      0.86       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.52      0.59      0.55        78
+
+    accuracy                           0.75       475
+   macro avg       0.42      0.38      0.37       475
+weighted avg       0.68      0.75      0.71       475
+
+
+#### lbfgs Solver
+4.  Learn Rate = constant : 
+Accuracy = 78.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.33      0.07      0.12        28
+        PRFN       0.85      0.92      0.88       337
+        HATE       0.75      0.09      0.17        32
+        OFFN       0.60      0.78      0.68        78
+
+    accuracy                           0.79       475
+   macro avg       0.63      0.47      0.46       475
+weighted avg       0.77      0.79      0.76       475
+
+
+5.  Learn Rate = invscaling : 
+Accuracy = 78.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.33      0.07      0.12        28
+        PRFN       0.85      0.92      0.88       337
+        HATE       0.75      0.09      0.17        32
+        OFFN       0.60      0.78      0.68        78
+
+    accuracy                           0.79       475
+   macro avg       0.63      0.47      0.46       475
+weighted avg       0.77      0.79      0.76       475
+
+
+6.  Learn Rate = adaptive : 
+Accuracy = 78.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.33      0.07      0.12        28
+        PRFN       0.85      0.92      0.88       337
+        HATE       0.75      0.09      0.17        32
+        OFFN       0.60      0.78      0.68        78
+
+    accuracy                           0.79       475
+   macro avg       0.63      0.47      0.46       475
+weighted avg       0.77      0.79      0.76       475
+
+
+### logistic Activation
+#### adam Solver
+7.  Learn Rate = constant : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+8.  Learn Rate = invscaling : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+9.  Learn Rate = adaptive : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+#### lbfgs Solver
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+10.  Learn Rate = constant : 
+Accuracy = 70.94736842105263%
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+11.  Learn Rate = invscaling : 
+Accuracy = 70.94736842105263%
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+12.  Learn Rate = adaptive : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+#### sgd Solver
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+13.  Learn Rate = constant : 
+Accuracy = 70.94736842105263%
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+14.  Learn Rate = invscaling : 
+Accuracy = 70.94736842105263%
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+15.  Learn Rate = adaptive : 
+Accuracy = 70.94736842105263%
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+### tanh Activation
+#### adam Solver
+16.  Learn Rate = constant : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+17.  Learn Rate = invscaling : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+18.  Learn Rate = adaptive : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+#### sgd Solver
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+19.  Learn Rate = constant : 
+Accuracy = 74.31578947368422%
+
+              precision    recall  f1-score   support
+
+        NONE       0.48      0.36      0.41        28
+        PRFN       0.80      0.91      0.85       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.62      0.49      0.55        78
+
+    accuracy                           0.74       475
+   macro avg       0.47      0.44      0.45       475
+weighted avg       0.70      0.74      0.72       475
+
+
+/usr/local/lib/python3.6/dist-packages/sklearn/neural_network/_multilayer_perceptron.py:573: UserWarning: Training interrupted by user.
+  warnings.warn("Training interrupted by user.")
+
+20.  Learn Rate = invscaling : 
+Accuracy = 76.63157894736841%
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.84      0.93      0.89       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.49      0.64      0.55        78
+
+    accuracy                           0.77       475
+   macro avg       0.33      0.39      0.36       475
+weighted avg       0.68      0.77      0.72       475
+
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/usr/local/lib/python3.6/dist-packages/sklearn/neural_network/_multilayer_perceptron.py:573: UserWarning: Training interrupted by user.
+  warnings.warn("Training interrupted by user.")
+
+21.  Learn Rate = adaptive : 
+Accuracy = 79.57894736842105%
+
+              precision    recall  f1-score   support
+
+        NONE       0.45      0.36      0.40        28
+        PRFN       0.84      0.95      0.89       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.65      0.63      0.64        78
+
+    accuracy                           0.80       475
+   macro avg       0.49      0.48      0.48       475
+weighted avg       0.73      0.80      0.76       475
+
+
+### relu Activation
+#### adam Solver
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+22.  Learn Rate = constant : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+23.  Learn Rate = invscaling : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+24.  Learn Rate = adaptive : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+#### sgd Solver
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+25.  Learn Rate = constant : 
+Accuracy = 78.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.84      0.92      0.88       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.61      0.82      0.70        78
+
+    accuracy                           0.79       475
+   macro avg       0.36      0.44      0.39       475
+weighted avg       0.70      0.79      0.74       475
+
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+26.  Learn Rate = invscaling : 
+Accuracy = 70.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.71      1.00      0.83       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.00      0.00      0.00        78
+
+    accuracy                           0.71       475
+   macro avg       0.18      0.25      0.21       475
+weighted avg       0.50      0.71      0.59       475
+
+
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+27.  Learn Rate = adaptive : 
+Accuracy = 78.94736842105263%
+
+              precision    recall  f1-score   support
+
+        NONE       0.00      0.00      0.00        28
+        PRFN       0.85      0.92      0.89       337
+        HATE       0.00      0.00      0.00        32
+        OFFN       0.58      0.83      0.68        78
+
+    accuracy                           0.79       475
+   macro avg       0.36      0.44      0.39       475
+weighted avg       0.70      0.79      0.74       475
+
+
+/usr/local/lib/python3.6/dist-packages/sklearn/neural_network/_multilayer_perceptron.py:573: UserWarning: Training interrupted by user.
+  warnings.warn("Training interrupted by user.")
+/usr/local/lib/python3.6/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
