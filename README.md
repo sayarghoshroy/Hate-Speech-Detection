@@ -8,6 +8,7 @@
 
 - [Task Description](https://hasocfire.github.io/hasoc/2020/index.html)
 - A directory with raw datasets can be found [here](https://drive.google.com/file/d/1565-8aeKS1Rg9IafzN0gbGo6v1lS48ri/view?usp=sharing).
+- [Slide Deck](https://docs.google.com/presentation/d/1jqbs2oBXBin-5g6vonM04DxvKAPP_MkPXNNBjFmk-go/edit?usp=sharing)
 
 #### Reliable Download of all Datasets
 
@@ -36,5 +37,10 @@ gdown https://drive.google.com/uc?id=1565-8aeKS1Rg9IafzN0gbGo6v1lS48ri
   13. 'reserved_word': Reserved Words
   14. 'emotext': A textual description of all emojis
   15. 'segmented_hash': The hashtag text segmented into words
+  
+ #### Models and Features
+ - [Perspective API](https://www.perspectiveapi.com/#/home) features for English and German
+ - [XML-RoBERTa](https://huggingface.co/transformers/model_doc/xlmroberta.html) Model trained in multi-lingual setting
+ - Other Transformer based models including [BERT](https://huggingface.co/transformers/model_doc/bert.html) and [distilBERT](https://huggingface.co/transformers/model_doc/distilbert.html)
 
 ---
