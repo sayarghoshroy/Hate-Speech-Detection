@@ -2,9 +2,13 @@
 
 ## Hate Speech Detection Task and Subtasks for HASOC 2020
 
-#### To access Overleaf Draft with Edit Access, click [here](https://www.overleaf.com/2724577294mqbjnnhgpmdw)
+<p align="center">
+  <img src="https://github.com/sayarghoshroy/Hate-Speech-Detection/blob/master/illustrations/hate.png" width="60%">
+</p>
 
 ---
+
+#### To access Overleaf Draft with Edit Access, click [here](https://www.overleaf.com/2724577294mqbjnnhgpmdw)
 
 #### Created Dataset with Features [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sayarghoshroy/Hate-Speech-Detection/blob/master/HASOC_tweet_engine.ipynb)
 
