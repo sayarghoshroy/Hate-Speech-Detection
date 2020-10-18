@@ -3,7 +3,7 @@
 ## Hate Speech Detection Task and Subtasks for HASOC 2020
 
 <p align="center">
-  <img src="https://github.com/sayarghoshroy/Hate-Speech-Detection/blob/master/illustrations/hate.png" width="60%">
+  <img src="https://github.com/sayarghoshroy/Hate-Speech-Detection/blob/master/illustrations/hate.jpg" width="60%">
 </p>
 
 ---
