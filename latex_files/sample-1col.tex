@@ -53,7 +53,7 @@
 
 %%
 %% The "title" command
-\title{iREL, IIIT-H at HASOC '20: Leveraging Multilingual Transformers for Hate Speech Detection}
+\title{Leveraging Multilingual Transformers for Hate Speech Detection}
 % Broad domain
 % Related Work - how are we better
 %Challenges
@@ -122,13 +122,13 @@ A feature selection study is provided to illustrate specific feature impacts upo
 
 \section{Introduction}
 % Broad domain
-With rise in the number of posts made on social media, an increase in the amount of toxic content on the web is witnessed. Measures to detect such instances of toxicity is of paramount importance in today's world with regards to keeping the web a safe and healthy environment for all. Detecting hateful and offensive content in typical posts and comments found on the web is the first step towards building a system which can flag items with possible adverse effects and take steps necessary to handle such behavior.
+With a rise in the number of posts made on social media, an increase in the amount of toxic content on the web is witnessed. Measures to detect such instances of toxicity is of paramount importance in today's world with regards to keeping the web a safe and healthy environment for all. Detecting hateful and offensive content in typical posts and comments found on the web is the first step towards building a system which can flag items with possible adverse effects and take steps necessary to handle such behavior.
 
 % Problem Defined
 In this paper, we look at the problem of detecting hate speech and offensive remarks within tweets. More specifically, we attempt to solve two classification problems. Firstly, we try to assign a binary label to a tweet indicating whether it is hateful and offensive (class HOF) or not (class NOT). Secondly, if the tweet belongs to class HOF, we classify it further into one of the following three possible classes: (a) HATE: Contains hate speech, (b) OFFN: Is offensive, and (c) PRFN: Contains profanities.
 
 % Challenges
-The language in use on the web is in a different text style as compared to day to day speech, formally written articles, and webpages. In order to fully comprehend the social media style of text, a model needs to have knowledge of the pragmatics of emojis and smileys, the specific context in which certain hashtags are being used and it should be able to generalize to various domains. Also, social media text is full of acronyms, abbreviated forms of words and phrases, orthographic deviations from standard forms such as dropping of vowels from certain words, and contains instances of code mixing.
+The language in use on the web is in a different text style as compared to day-to-day speech, formally written articles, and webpages. In order to fully comprehend the social media style of text, a model needs to have knowledge of the pragmatics of emojis and smileys, the specific context in which certain hashtags are being used, and it should be able to generalize to various domains. Also, social media text is full of acronyms, abbreviated forms of words and phrases, orthographic deviations from standard forms such as dropping of vowels from certain words, and contains instances of code mixing.
 
 % On perspective experiments
 The escalation in derogatory posts on the internet has prompted certain agencies to make toxicity detection modules available for web developers as well as for the general public. A notable work in this regard is Google's Perspective API\footnote{\url{https://www.perspectiveapi.com/}} which uses machine learning models to estimate various metrics such as toxicity, insult, threat, etc., given a span of text as input. We study the usefulness of these features for hate speech detection tasks in English and German.
@@ -141,11 +141,11 @@ In recent years, utilizing Transformer-based\cite{vaswani2017attention} Language
 
 \section{Related Work}
 
-In this section, we'll provide a brief overview of the variety of methods and procedures applied in attempts to solve the problem of hate speech detection. Approaches using Bag of Words (BoW)\cite{Kwok2013LocateTH} typically lead to a high number of false positives. They also suffer from data sparsity issues. In order to deal with the large number of false positives, efforts were made to better characterize and understand the nature of hate speech itself. This led to the formation of finer distinctions between the types of hate speech\cite{wang2014cursing}; in that, hate speech was further classified into ``profane" and ``offensive". Features such as N-gram graphs\cite{phdthesis} or Part of Speech features\cite{chen2012detecting} were also incorporated into the classification models leading to an observable rise in the prediction scores. 
+In this section, we will provide a brief overview of the variety of methods and procedures applied in attempts to solve the problem of hate speech detection. Approaches using Bag of Words (BoW)\cite{Kwok2013LocateTH} typically lead to a high number of false positives. They also suffer from data sparsity issues. In order to deal with the large number of false positives, efforts were made to better characterize and understand the nature of hate speech itself. This led to the formation of finer distinctions between the types of hate speech\cite{wang2014cursing}; in that, hate speech was further classified into ``profane" and ``offensive". Features such as N-gram graphs\cite{phdthesis} or Part of Speech features\cite{chen2012detecting} were also incorporated into the classification models leading to an observable rise in the prediction scores. 
 
 Later approaches used better representation of words and sentences by utilizing semantic vector representations such as word2vec\cite{mikolov2013distributed} and GloVe\cite{pennington2014glove}. These approaches outshine the earlier BoW approaches as similar words are located closer together in the latent space. Thus, these continuous and dense representations replaced the earlier binary features resulting in a more effective encoding of the input data. Support Vector Machines (SVMs) with a combination of lexical and parse features have been shown to perform well for detecting hate speech as well.\cite{chen2012detecting}
 
-The recent trends in deep learning led to better representations of sentences. With RNNs, it became possible to model larger sequences of text. Gated RNNs such as LSTMs\cite{sutskever2014sequence} and GRUs\cite{chung2014empirical} made it possible to better represent long term dependencies. This boosted the classification scores, with deep learning models outperforming character and word based N-gram models.\cite{badjatiya2017dlhate}
+The recent trends in deep learning led to better representations of sentences. With RNNs, it became possible to model larger sequences of text. Gated RNNs such as LSTMs\cite{sutskever2014sequence} and GRUs\cite{chung2014empirical} made it possible to better represent long term dependencies. This boosted classification scores, with LSTM and CNN-based models significantly outperforming character and word based N-gram models.\cite{badjatiya2017dlhate}
 
 Character based modelling with CharCNNs\cite{zhang2015character} have been applied for hate speech classification. These approaches particularly shine in cases where the offensive speech is disguised with symbols like `*', `\$' and so forth.\cite{character-abuse}
 
@@ -169,14 +169,14 @@ The TRAC shared task\cite{ws-2018-trolling} on aggression identification include
 \textbf{Language} & \textbf{Train} & \textbf{Test} \\
 \midrule
 English  & 3708  & 814  \\
-German   & 2963  & 526 \\
-Hindi    & 2373  & 663 
+German   & 2373  & 526 \\
+Hindi    & 2963  & 663 
 \end{tabular}
 \caption{Dataset Size (in \#tweets)}
 \label{tab:datastats}
 \end{table}
 
-The datasets for the tasks were provided by the organizers of the HASOC '20\footnote{\url{https://competitions.codalab.org/competitions/26027}}. The data consists of tweets from three languages: English, German and Hindi, and was annotated on two levels. The coarse annotation involved a binary classification task with the given tweet being marked as hate speech (HOF) or not (NOT). In the finer annotation, we differentiate between the types of hate speech and have three different classes:
+The datasets for the tasks were provided by the organizers of the HASOC '20\footnote{\url{https://competitions.codalab.org/competitions/26027}}. The data consists of tweets from three languages: English, German and Hindi, and was annotated on two levels. The coarse annotation involved a binary classification task with the given tweet being marked as hate speech (HOF) or not (NOT). In the finer annotation, we differentiate between the types of hate speech and have four different formal classes:
 
 \begin{table}[]
 \begin{tabular}{lll}
@@ -192,13 +192,13 @@ Hindi    & 2116 & 847
 \end{table}
 
 \begin{enumerate}
-    \item \emphasis{HATE}: This class contains tweets which highlight negative attributes or deficiencies of certain groups of individuals. This class includes hateful comments towards individuals based on race, political opinion, sexual orientation, gender, social status, health condition, etc.\\
+    \item \emphasis{\textbf{HATE}}: This class contains tweets which highlight negative attributes or deficiencies of certain groups of individuals. This class includes hateful comments towards individuals based on race, political opinion, sexual orientation, gender, social status, health condition, etc.\\
     Example: ``RT @Lubchansky: good to know rich people have always been dumb as shit https://t.co/otdmH0wquk''
-    \item \emphasis{OFFN}: This class contains tweets which are degrading, dehumanizing or insulting towards an individual. It encompasses cases of threatening with violent acts. \\
+    \item \emphasis{\textbf{OFFN}}: This class contains tweets which are degrading, dehumanizing or insulting towards an individual. It encompasses cases of threatening with violent acts. \\
     Example: ``By shitting yourself and taking the backdoor out, instead of fronting up to the public.''
-    \item \emphasis{PRFN}: This class contains tweets with explicit content, profane words or unacceptable language in the absence of insults and abuse. This typically concerns the usage of swearwords and cursing. \\
+    \item \emphasis{\textbf{PRFN}}: This class contains tweets with explicit content, profane words or unacceptable language in the absence of insults and abuse. This typically concerns the usage of swearwords and cursing. \\
     Example: ``@HermesCxbin turn that shit off''
-    \item \emphasis{NONE}: This class contains the tweets which do not fit into the above three classes i.e it does not contain instances of hate and offence. \\
+    \item \emphasis{\textbf{NONE}}: This class contains the tweets which do not fit into the above three classes i.e it does not contain instances of hate and offence. \\
     Example: ``@AskPlayStation I can’t get the 14 days free trial please fix I don’t have money for ps plus I need this.''
 \end{enumerate}
 
@@ -232,11 +232,11 @@ We perform experiments with features extracted from the Perspective API. The API
 
 For both English and German tweets, we extract perspective API scores for all available fields using (a) the complete tweet as is, and (b) the extracted cleaned tweet text excluding emojis, smileys, URLs, mentions, numbers, hashtags and reserved words. Thus, we have 18 features for English tweets and 12 features for German tweets to work with.
 
-We trained multi-layer perceptron classifiers for English and German using a concatenation of these features as the input vector. In addition to these classifiers trained in the monolingual setting, we trained an English-German multilingual classifier using the 12 perspective API features which are common to English and German. We tried out multiple training settings with different activation functions and optimization techniques. The best results with Perspective features are presented in Section \ref{sec:results}.
+We trained multi-layer perceptron classifiers for English and German using a concatenation of these features as the input vector. In addition to these classifiers trained in the monolingual setting, we trained an English-German multilingual classifier using the 12 perspective API features which are common to English and German. The datapoints in the corresponding training sets were randomly shuffled and standardized. The same standardization values were used on the test set during inference. We tried out multiple training settings with different activation functions and optimization techniques. The best results with Perspective features are presented in Section \ref{sec:results}.
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.54]{hate.pdf}
+    \includegraphics[scale=0.6]{hate.pdf}
     \caption{Model Overview}
     \label{fig:pipeline}
 \end{figure}
@@ -253,7 +253,7 @@ The concatenated feature-set is then passed to a two layer multi-layer perceptro
 
 %BERT, mBERT(multilingual BERT)\cite{devlin2018bert}, distilBERT \cite{sanh2020distilbert} and
 
-For fine-tuning our XLMR Transformer weights, we perform learning rate scheduling based on the actual computed macro F1-scores on the validation split instead of using the validation loss. As opposed to simply using early-stopping to prevent overfitting, we consider the change in validation performance at the end of each training iteration. If the validation performance goes down across an iteration, we trace back to the previous model weights and scale down our learning rate. Training stops when the learning rate reaches a very small value $\epsilon$. Although expensive, this form of scheduling ensures that we maximize our Macro F1-score on the validation split.
+For fine-tuning our XLMR Transformer weights, we perform learning rate scheduling based on the actual computed macro F1-scores on the validation split instead of using the validation loss. As opposed to simply using early-stopping to prevent overfitting, we consider the change in validation performance at the end of each training iteration. If the validation performance goes down across an iteration, we trace back to the previous model weights and scale down our learning rate. Training stops when the learning rate reaches a very small value $\epsilon$\footnote{Set to 1e-12 in our experiments.}. Although expensive, this form of scheduling ensures that we maximize our Macro F1-score on the validation split.
 
 \section{Results}
 \label{sec:results}
@@ -282,18 +282,21 @@ In this section, we provide quantitative performance evaluations of our approach
 \toprule
  & \multirow{2}{*}{\textbf{Activation}} & \multirow{2}{*}{\textbf{Optimization}} & \multicolumn{2}{c}{\textbf{English}} & \multicolumn{2}{c}{\textbf{German}} \\ \cmidrule{4-5} \cmidrule{6-7}
  & & & Task 1 & Task 2 & Task 1 & Task 2 \\ \midrule
-\multirow{2}{*}{monolingual}  & identity & adam (early-stop) & \textbf{89.60} & 53.90 & - & - \\ 
-& tanh & adam (early-stop)  & - & - & 79.25 & 43.00 \\ \midrule
-\multirow{3}{*}{multilingual} & tanh & adam & 88.94 & 53.46 & \textbf{80.79} & 41.97 \\ % \midrule
-& identity & adam (early-stop) & 88.94 & \textbf{54.55} & - & - \\ % \midrule
-& tanh & sgd (adaptive LR) & - & - & 78.68 & \textbf{46.91} \\ 
+\multirow{2}{*}{monolingual}  & identity & adam (early-stop) & \textbf{89.68} & \textbf{53.90} & 75.40 & 41.84 \\ 
+& tanh & adam (early-stop) & 88.93 & 47.07 & \textbf{79.25} & 43.00 \\ \midrule
+\multirow{4}{*}{multilingual} & identity & sgd (adaptive LR) & 88.82 & 47.02 & 72.89 & 38.86 \\
+& identity & adam (early-stop) & 88.44 & 46.00 & 72.63 & 42.83 \\
+ % \midrule
+& tanh & sgd (adaptive LR) & 87.69 & 44.86 & 75.38 & 38.80 \\
+& tanh & adam (early-stop) & 87.95 & 46.03 & 76.68 & \textbf{46.40} \\ % \midrule
+ 
 % \bottomrule
 \end{tabular*}
 \caption{Perspective API Experiments $($Best results highlighted in bold$)$}
 \label{tab:perspective}
 \end{table}
 
-In table \ref{tab:perspective}, we present our study on usage of Perspective API features with a multi-layer perceptron classifier for English and German tasks. We notice that these features are able to provide respectable results on the hate and offensive content detection but cannot compete with the Transformer-based models when fine-grained classification is required. In the monolingual mode, our exhaustive grid search showed that the use of identity activation for English and tanh activation for German are the most effective MLP hidden layer activation settings. Table \ref{tab:perspective} lists the best activation functions and optimization techniques for particular $($task, language$)$ pairs.
+In table \ref{tab:perspective}, we present our study on usage of Perspective API features with a multi-layer perceptron classifier for English and German tasks. We notice that these features are able to provide respectable results on the hate and offensive content detection but cannot compete with the Transformer-based models when fine-grained classification is required. In the monolingual mode, our exhaustive grid search showed that the use of identity activation for English and tanh activation for German are the most effective MLP hidden layer activation settings. Table \ref{tab:perspective} lists the best activation functions and optimization techniques for particular $($task, language$)$ pairs. We observe that German Task 2 benefits from the multilingual mode and we attribute this to the additional data from the English training examples which allow the model to generalize better. However, a drop in the English results is witnessed which might be due to the reduction in the number of available features.
 
 \begin{table}[]
 \centering
@@ -327,16 +330,16 @@ The models: XLMR-adaptive and XLMR-tuned use our proposed adaptive learn rate sc
 & cleaned text + emoji & \textbf{83.60} & 49.78 & 68.05 & 40.54 & 68.21 & 45.48 \\ % \midrule
 & cleaned text + hashtag & 83.17 & \textbf{53.60} & 66.23 & 41.91 & 66.98 & \textbf{50.08} \\ \midrule % \midrule
 % Emoji + Hashtag & 82.0157 & 51.0204 & 68.3440 & 48.5972 & 66.2658 & 41.5886 \\ % \midrule
-\multirow{3}{*}{multilingual}& cleaned text & 80.47 & 47.88 & 71.07 & \textbf{46.66} & 64.84 & 44.39 \\ 
+\multirow{3}{*}{multilingual}& cleaned text & 80.47 & 47.88 & 71.07 & 46.66 & 64.84 & 44.39 \\ 
 & cleaned text + emoji & 82.73 & 51.90 & \textbf{72.73} & 43.24 & 67.83 & 41.83 \\ % \midrule
-&cleaned text + hashtag & 81.22 & 50.06 & 68.52 & 47.31 & 68.19 & 44.71 \\ % \midrule
+&cleaned text + hashtag & 81.22 & 50.06 & 68.52 & \textbf{47.31} & 68.19 & 44.71 \\ % \midrule
 % \bottomrule
 \end{tabular*}
 \caption{Feature Selection Study $($Best results highlighted in bold$)$}
 \label{tab:monobase}
 \end{table*}
 
-Finally, in table \ref{tab:monobase}, we show results for a study on feature selection using pre-trained XLM-RoBERTa as the Transformer architecture for generating text embeddings. Like XLMR-freeze, the Transformer layers are frozen and not fine-tuned during the training process. The table is separated into monolingual and multilingual modes of training. Results are showed using different feature collections, namely, `cleaned tweet text only',  `cleaned tweet + hashtags', and `cleaned tweet + emojis' as inputs to the classifier. We observe a subtle performance drop for English and Hindi and a considerable performance gain for German while moving from monolingual to multilingual training settings.
+Finally, in table \ref{tab:monobase}, we show results for a study on feature selection using pre-trained XLM-RoBERTa as the Transformer architecture for generating text embeddings. Like XLMR-freeze, the Transformer layers are frozen and not fine-tuned during the training process. The table is separated into monolingual and multilingual modes of training. Results are showed using different feature collections, namely, `cleaned tweet text only',  `cleaned tweet + hashtags', and `cleaned tweet + emojis' as inputs to the classifier. We observe a performance drop for English and Hindi and a considerable performance gain for German while moving from monolingual to multilingual training settings.
 
 % \begin{table}
 %   \caption{Some Typical Commands}
@@ -353,12 +356,12 @@ Finally, in table \ref{tab:monobase}, we show results for a study on feature sel
 % \end{table}
 
 \section{Experimental Details}
-We used Hugging Face's\footnote{\url{https://huggingface.co/}} implementation of XLM-RoBERTa in our proposed architecture. Our architectures using Transformer models with custom classification heads were written in pytorch. We used Adam optimizer for training with an initial learning rate of 2e-5, dropout probability of 0.2 with other hyper-parameters set to their default values. We updated weights based on cross-entropy loss values. For studies with Perspective API Features and experiments where we do not fine-tune the Transformer weights, we used scikit-learn's\cite{scikit-learn} implementation of a multi-layer perceptron and UKPLab's sentence-transformers library whenever applicable.
+We used Hugging Face's\footnote{\url{https://huggingface.co/}} implementation of XLM-RoBERTa in our proposed architecture. Our architectures using Transformer models with custom classification heads were written in pytorch. We used Adam optimizer for training with an initial learning rate of 2e-5, dropout probability of 0.2 with other hyper-parameters set to their default values. We updated weights based on cross-entropy loss values. For studies with Perspective API Features and experiments where we do not fine-tune the Transformer weights, we used scikit-learn's\cite{scikit-learn} implementation of a multi-layer perceptron and UKPLab's sentence-transformers library\cite{reimers-2020-multilingual-sentence-bert} whenever applicable.
 
 In our Perspective API experiments, we used deep multi-layer perceptrons with 12 and 9 hidden layers for the binary and multi-class classification modes respectively. Across all our experimental settings, we used a batch size of 200 with other hyper-parameter values set to default. We performed an exhaustive grid search for every multi-layer perceptron model varying the activation function, size of hidden layer, optimization algorithm and type of learning rate scheduling. We reported results using the grid search settings which performed the best on a 4-fold cross validation on the training set. 
 
 \section{Conclusion}
-In this paper, we have leveraged the recent advances in large scale Transformer-based language model pre-training to build models for coarse detection and fine-grained classification of hateful and offensive content in social media posts. Our experiments showcase the utility and effectiveness of language models pre-trained with multi-lingual training objectives on a variety of languages. Our studies show the efficacy of Perspective API metrics by using them as standalone features for hate speech detection. Our best model utilized semantic embeddings for cleaned tweet text, emojis, and segmented hashtags as features, and a customized two layer feed-forward neural network as the classifier. We further conducted a feature selection experiment to show the impact of individual features on the classification performance. We plan to explore other novel methods of capturing social media text semantics as part of future work.
+In this paper, we have leveraged the recent advances in large scale Transformer-based language model pre-training to build models for coarse detection and fine-grained classification of hateful and offensive content in social media posts. Our experiments showcase the utility and effectiveness of language models pre-trained with multi-lingual training objectives on a variety of languages. Our studies show the efficacy of Perspective API metrics by using them as standalone features for hate speech detection. Our best model utilized semantic embeddings for cleaned tweet text, emojis, and segmented hashtags as features, and a customized two-layer feed-forward neural network as the classifier. We further conducted a feature selection experiment to show the impact of individual features on the classification performance. We plan to explore other novel methods of capturing social media text semantics as part of future work.
 
 %% Define the bibliography file to be used
 \bibliography{sample-ceur}
